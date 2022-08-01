@@ -1,0 +1,237 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* *************************** Nav Bar *************************** */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* Navigation bar list and styling*/
+#navbar ul{
+    display: flex;      /*Directly cnovert into row*/
+}
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-decoration: none; /*Remove underline*/
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; /*Remove underline*/
+}
+
+#navbar ul li{
+    list-style: none;   /*no bullet*/
+    font-size: 1.3rem;
+    margin: 5px 15px;
+}
+
+
+/* *************************** Home Section *************************** */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+#home::before{
+    content: "";
+    /*background: url('../images/mountains-gca75e506e_1920.jpg') no-repeat center center/cover;*/
+    position: absolute;
+    height: 120%;
+    z-index: -1;
+    opacity: 0.89;
+    width: 100%;   
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+h4{
+    color: black;
+    text-align: center;
+}
+
+/* Extra class */
+.hprimary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.hsecondary{
+    font-size: 1.8rem;
+    padding: 6px;
+    color: chartreuse;
+}
+
+p{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* *************************** Date and Time  ***************************/
+#date-time{
+    font-size: 20px;
+    text-align: right;
+    width: 30%;
+    color:black;
+} 
+
+/* *************************** Education *************************** */
+#education::before{
+    content: "";
+    /*background: url('../images/mountains-gca75e506e_1920.jpg') no-repeat center center/cover;*/
+    position: absolute;
+    height: 200%;
+    z-index: -1;
+    opacity: 0.89;
+    width: 100%;   
+}
+
+
+
+#education{
+    display:none;
+}
+#experience{
+    display: none;
+}
+#Contact{
+    display: none;
+}
+
+.centeralign {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Tech{
+    margin-top: 40px;
+}
+
+#Resume{
+    margin-top: 50px;
+}
+
+.profile{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+    border-radius: 150px;
+    display: block;
+
+    height: 200px;
+    width: 200px;
+    background-color: white;    
+}
+
+#Contact{
+    margin-top: 40px;    
+}
+
+
+
+#head{
+    font-size: 40px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    color: red ;
+}
+#intro{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#desc{
+    font-weight: 200;
+    font-size: 15px;
+
+}
+#college{
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    display: flex;
+}
+#college_head{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact{
+    margin-left: 15%;
+    font-size:25px;
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+#contact-info{
+    display: flex;
+    margin-top: 60px;
+}
+#social{
+    color: cyan;
+    font-size: 48px;
+    margin-left: 25px;
+}
+
+#col-photo{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    display: block;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    #navbar {
+        flex-direction: column;
+    }
+  
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+}
